@@ -1,16 +1,5 @@
+// SCRIPT POUR AFFICHER DES IMAGES DE CHIENS
 window.addEventListener('load', function() {
-
-    // document.querySelector('button').addEventListener('click', ()=>{
-    //     console.log('feaf')
-       
-    //     img1.src =  'https://i.kym-cdn.com/photos/images/newsfeed/001/439/881/ed5.png';
-   
-    // })
-
-
-
-
-
 
     var yo = new XMLHttpRequest()
 
