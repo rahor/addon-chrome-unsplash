@@ -1,193 +1,170 @@
 /* RESET CSS */
-*{ margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-    box-sizing: border-box;
-    }
-body{
- background-color: #202020;
-    color: white;
-  }
-
-  main{
-    padding: 2rem 8rem;
-  }
-
-  h1{
-    font-size: 3rem;
-    text-align: center;
-    color: white;
-    font-weight: 300;
-    /* font-weight: bold; */
-  }
-
-  h2{
-    /* font-family: Roboto; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3.5rem;
-    /* line-height: 50px; */
-    color: white;
-    padding-bottom: 2rem;
-  }
-
-  .imageContainer{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-  }
- 
-
-  .favorisContainer{
-    width: 35%;
-    /* background-color: blue; */
-    height: 100%;
-  }
-
-
-  
-
-  #imageAPI{
-    width: 100%;
-    height: 500px;
-    /* background-color: aqua; */
-    /* margin: auto; */
-    padding-top: 3rem;
-    padding-left: 1rem;
-    border-radius: 5px;
-  }
-
-  #imageAPI img{
-    width: 5rem;
-    height: 5rem;
- 
-  }
-
-
-
-  .researchContainer{
-    width: 100%;
-    margin: auto 0;
-    /* background-color: rebeccapurple; */
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-  }
-
-  
-
-  .button {
-  background-color: white;
-  border-radius: 5px;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 1;
-  transition: 0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
 }
 
-.button:hover {opacity: 0.6;}
-#btnSearch{
+/* -----GENERAL------- */
+body {
+  background-color: #202020;
+  color: white;
+}
+
+main {
+  padding: 2rem 8rem;
+}
+
+/* -----HEURE------ */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+
+/* ---------SECTION RECHERCHE-------- */
+.logo {
+  width: 4rem;
+}
+.researchContainer {
+  width: 100%;
+  margin: auto 0;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btnSearch {
   font-size: 1.4rem;
 }
 
-#btnSearch:hover{
+#btnSearch:hover {
   cursor: pointer;
 }
 
-
-.btns{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-  }
-  .logo{
-    width: 4rem;
-  }
-
-
-
 /* Searchbar */
-  .search{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.search {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-
-
-  input[type="text"]{
-    border: 0;
+/* Champs de texte */
+input[type="text"] {
+  border: 0;
   outline: 0;
   background: transparent;
   border-bottom: 2px solid white;
   font-size: 1.7rem;
   color: white;
-  padding-bottom: .8rem ;
-   width: 85%;
-   font-weight: 300;
-  }
-
-  .section{
-    display: flex;
-    padding-top:5rem;
-    justify-content: space-between;
-  }
-
-
-  .sitesContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-  }
-
-.site a{
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: underline;
-
+  padding-bottom: .8rem;
+  width: 85%;
+  font-weight: 300;
 }
-  .site{
-    height: 11rem;
-    width: 10rem;
-  
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-   ;
-  }
+/* ---------FIN SECTION RECHERCHE-------- */
 
-  .site div{
-    /* background-color: royalblue; */
-    height: 7rem;
-    width: 7rem;
-    margin: auto;
-    
-    border-radius: 50%;
-    /* overflow:hidden; */
-  }
 
-  .site div img{
-    width: 100%;
-  }
 
-#btnRefresh{
-  position: absolute;
-  left: 20px;
-  width: 5rem;
-  height: 5rem;
-  background-color: transparent;
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 2.5rem;
+
+/* -----------------SECTION PRINCIPALE----------------- */
+.section {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: space-between;
 }
+
+    /* -----------SECTION POUR L'IMAGE-------- */
+    .imageContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    #imageAPI {
+      width: 100%;
+      height: 500px;
+      /* background-color: aqua; */
+      /* margin: auto; */
+      padding-top: 3rem;
+      padding-left: 1rem;
+      border-radius: 5px;
+    }
+
+    #imageAPI img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    /* button refresh la photo */
+    #btnRefresh {
+      position: absolute;
+      left: 20px;
+      width: 5rem;
+      height: 5rem;
+      background-color: transparent;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    /* -----------FIN SECTION POUR L'IMAGE-------- */
+
+    /* ---------------SECTION DES FAVORIS------------ */
+    .favorisContainer {
+      width: 35%;
+      height: 100%;
+    }
+
+    .sitesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .site a {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+
+    .site {
+      height: 11rem;
+      width: 10rem;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      ;
+    }
+
+    .site div {
+      /* background-color: royalblue; */
+      height: 7rem;
+      width: 7rem;
+      margin: auto;
+      border-radius: 50%;
+      /* overflow:hidden; */
+    }
+
+    .site div img {
+      width: 100%;
+    }
+    /* ---------------FIN SECTION DES FAVORIS------------ */
+
+
+/* -----------------SECTION PRINCIPALE----------------- */
