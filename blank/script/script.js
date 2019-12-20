@@ -13,15 +13,7 @@ window.addEventListener('load', function() {
         var blocImage =  document.getElementById('imageAPI').style
         blocImage.backgroundImage = "url('" + data.message+"')"
         blocImage.backgroundSize = "cover";
-        blocImage.backgroundPosition = "center";
-    
-    
-        // var img1 = document.createElement('img'); 
-        // img1.src = data.message; 
-        // document.getElementById('imageAPI').appendChild(img1); 
-        
-    
-     
+        blocImage.backgroundPosition = "center";     
     }
     yo.send()
 
