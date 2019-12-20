@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 247, 231);
+  }
+  
+  h1,h2,a,p,.site a{color: black;}
+  
+  input[type="text"] {
+    
+    border-bottom: 2px solid black;
+    color: black;
+  
+  }
